@@ -1,6 +1,7 @@
 ---
 - name: Test Playbook for Pinging
   hosts: all
+  remote_user: controller
   become: yes
   tasks:
   - name: Test ping
